@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> AIM: NFT Authentication</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+
+    <body style="background-color:#303030;">
+      <button type="button" style="visibility: hidden;" id="success"  data-bs-toggle="modal" data-bs-target="#exampleModal2"></button>
+        <div class="row pt-3 px-5 mx-5">
+          <div class="card ps-0">
+            <div class="card-body p-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                <div class="card">
+                  <div class="card-header fs-4"> 
+                  <div class="row">
+                  <div class="col-9 pt-1 pb-2">Grand Seiko SBGA211</div>
+                  <div class="col-3 pe-0 ps-3" style="align-items: flex-end;"><button class="btn btn-small btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Inquire</button></div>
+              </div>
+              </div>
+              <div class="card-body pt-4 text-center px-0 pb-0">
+                  <img src="rolex.png" width="100%" class="ms-2">
+              <button type="button" class="btn btn-small btn-outline-success my-4" style="width:60%; align-self: center;" data-bs-toggle="modal" data-bs-target="#exampleModal"> NFT Authenticated</button>
+                  <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Product History
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body px-0 pt-3" style="text-align: left;">
+                              <ul class="m-0">
+                            <li><b class="fs-5">June 26th, 2019</b> <p class="pt-1 px-3">Purchased by John Doe for $7,234.</p></li>
+                            <li><b class="fs-5">September 30, 2017</b> <p class="pt-1 px-3">Purchased by Ethan Hunt for $10,232.</p></li>
+                            <li><b class="fs-5">August 22, 2017</b> <p class="pt-1 px-3 m-0">NFT Created by Grand Seiko.</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Product Specifications
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body" style="text-align: left;">
+                            <p><b>Model Number:</b> SBGA211</p>
+                            <p><b>Manufacturing Date:</b> August 22, 2017</p>
+                            <p><b>Case Diameter:</b> 40mm</p>
+                            <p class="m-0"><b>Movement:</b> Grand Seiko Spring Drive</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          </div>
+  </div>
+  </div>
+  <div class="col-8 px-0 fs-5">
+    <p class="card-header fw-bold">On your left is our prototype for the sellable product display. 
+      In in fields below please tell us what you like, dislike, and would like to see added to the product.</p>
+      <form class="p-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Features you like:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <label for="exampleFormControlTextarea1" class="form-label">Features you dislike:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <label for="exampleFormControlTextarea1" class="form-label">Features you would like to see added:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <label for="exampleFormControlTextarea1" class="form-label">Anything else you want to tell us:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="button" class="btn btn-primary btn-lg mt-3">Submit</button>
+  </form>
+  </div>
+  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Price Request</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>This is where you would send a message to the seller asking for a certain price for the luxury good.</p>
+                  <hr class="mb-0">
+                  <form>
+                    <label for="exampleFormControlInput1" class="form-label pt-2">Name:</label>
+            <input type="email" class="form-control form-control-md" id="exampleFormControlInput1" placeholder="George P. Burdell">
+            <label for="exampleFormControlInput1" class="form-label pt-2">Asking Price:</label>
+            <input type="email" class="form-control form-control-md" id="exampleFormControlInput1" placeholder="$10,000">
+            <label for="exampleFormControlTextarea1" class="form-label pt-2">Message for the seller:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-sm btn-primary mt-2 fs-5">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">NFT Authentication Information</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p><b>Public Key:</b> 0ZGILH-3FKJB3-2BKKW3</p>
+                  <p><b>Authenticator:</b> Grand Seiko Manufacturing</p>
+                  <p><b>Host Server:</b> AIM Authentication 34.234.653.953</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal hide fade" id="modals">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fw-bold fs-3 text-success" id="exampleModalLabel">Success!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="fs-5">Your email address was sucessfully added to our mailing list. 
+                    If you wouldn't mind sticking around for less than 5 minutes to provide some input in our development process, we would surely appreciate your feedback.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <script type="text/javascript">
+          $(window).on('load', function() {
+              $('#modals').modal('show');
+          });
+      </script>
+        
+    </body>
+</html>
